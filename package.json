@@ -1,23 +1,26 @@
 {
-  "name": "sudoku",
+  "name": "TEMPLATE",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TEMPLATE",
+  "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
-    "test": "jest"
+    "test": "jest",
+    "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Noah Horwitz",
+  "license": "GPL-3.0-or-later",
+  "repository": "https://github.com/nhhor/",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "eslint": "^6.3.0",
+    "file-loader": "^4.2.0",
     "eslint-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
